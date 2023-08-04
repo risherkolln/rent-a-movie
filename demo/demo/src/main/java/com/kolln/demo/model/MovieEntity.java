@@ -1,19 +1,28 @@
 package com.kolln.demo.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
+
+import java.util.List;
 
 @Entity
+@Getter
+@Setter
 @Table(name = "movies")
 public class MovieEntity {
     @Id
     private Long id;
     private String name;
-    private String genre;
-    private Director director;
-    private List<Actor> stars;
-    private List<Writer> writers;
-    private Double formalRating;
-    private Double popularRating;
+  /*  @ManyToMany
+    private List<GenresEntity> genres;
+    @ManyToOne
+    @JoinColumn(name = "director_id")
+    private DirectorEntity director;
+    @OneToMany
+    private List<StarEntity> stars;
+    @OneToMany
+    private List<WritersEntity> writers;*/
+    private int formalRating;
+    private int popularRating;
 }
