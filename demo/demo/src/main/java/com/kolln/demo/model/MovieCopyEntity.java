@@ -12,10 +12,10 @@ public class MovieCopyEntity {
     @Id
     private Long id;
     private String serialNumber;
-  /*  @ManyToOne
+    @ManyToOne
     @JoinColumn(name = "movie_id")
     private MovieEntity movie;
     @ManyToOne
     @JoinColumn(name = "format_id")
-    private FormatEntity format;*/
+    private FormatEntity format;
 }

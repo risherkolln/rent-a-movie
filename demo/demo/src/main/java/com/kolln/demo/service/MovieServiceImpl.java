@@ -24,8 +24,8 @@ public class MovieServiceImpl implements MovieService {
     }
 
     @Override
-    public MovieEntity getMoviesByGender(Long id) {
-        return null;
+    public List<String> getMoviesByGenre(Long id) {
+        return movieRepository.getByGenres_Id(id).stream().map(m -> m.getName()).collect(Collectors.toList());
     }
 
     @Override

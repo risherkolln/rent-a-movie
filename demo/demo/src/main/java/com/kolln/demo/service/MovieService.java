@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface MovieService {
     int checkAvailability(Long id);
-    MovieEntity getMoviesByGender(Long id);
+    List<String> getMoviesByGenre(Long id);
     MovieEntity getMoviesByStar(Long id);
     MovieEntity getMoviesByDirector(Long id);
 

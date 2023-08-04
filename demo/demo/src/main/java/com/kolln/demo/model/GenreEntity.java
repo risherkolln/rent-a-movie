@@ -10,7 +10,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @Table(name = "genres")
-public class GenresEntity {
+public class GenreEntity {
     @Id
     private Long id;
     private String name;

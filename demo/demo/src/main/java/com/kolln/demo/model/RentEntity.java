@@ -14,10 +14,12 @@ import java.time.LocalDateTime;
 public class RentEntity {
     @Id
     private Long id;
-/*    @ManyToOne
+    @ManyToOne
+    @JoinColumn(name = "costumer_id")
     private CustomerEntity customer;
     @ManyToOne
-    private MovieCopyEntity movieCopy;*/
+    @JoinColumn(name = "movie_copy_id")
+    private MovieCopyEntity movieCopy;
     private LocalDateTime rentDate;
     private LocalDateTime returnDate;
     private Boolean returned;
