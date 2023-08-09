@@ -1,3 +1,22 @@
+INSERT INTO customers (id, name, address, dni) VALUES (1,'Roberto Fernandez', 'Chaco 185', 12542343);
+INSERT INTO customers (id, name, address, dni) VALUES (2,'Macarena Ruiz', 'Tucuman 1185', 33354105);
+INSERT INTO customers (id, name, address, dni) VALUES (3,'Marcos Alberto Lopez', 'Entre Rios 59', 47362600);
+INSERT INTO customers (id, name, address, dni) VALUES (4,'Maria Eugenia Wirz', 'San Martin 325', 21730805);
+INSERT INTO customers (id, name, address, dni) VALUES (5,'Sandra Valeria Lopez', 'Belgrano 6452', 23739049);
+INSERT INTO customers (id, name, address, dni) VALUES (6,'Paola Alvarez', 'Sarmiento 403', 53277346);
+INSERT INTO customers (id, name, address, dni) VALUES (7,'Matias Ezequiel Lopez', 'Mitre 634', 26835630);
+INSERT INTO customers (id, name, address, dni) VALUES (8,'Edith Solis', 'Santa Margarita 1385', 36337012);
+INSERT INTO customers (id, name, address, dni) VALUES (9,'Marcos Silva', 'San Juan 765', 19050336);
+INSERT INTO customers (id, name, address, dni) VALUES (10,'Paola Valeria Vara', 'Santa Cruz 15', 30454479);
+
+
+INSERT INTO formats (id, name) VALUES (1,'dvd');
+INSERT INTO formats (id, name) VALUES (2,'vhs');;
+INSERT INTO formats (id, name) VALUES (3,'blue-ray');
+INSERT INTO formats (id, name) VALUES (4,'digital');
+
+
+
 INSERT INTO directors (id, name) VALUES (1,'Christopher Nolan');
 INSERT INTO directors (id, name) VALUES (2,'Alejandro Monteverde');
 INSERT INTO directors (id, name) VALUES (3,'Damien Chazelle');
@@ -9,16 +28,16 @@ INSERT INTO directors (id, name) VALUES (8,'Roland Joffe');
 INSERT INTO directors (id, name) VALUES (9,'David O. Russell');
 INSERT INTO directors (id, name) VALUES (10,'Adam McKay');
 
-INSERT INTO movies (id, name, director_id, formal_rating, popular_rating) VALUES (1,'Oppenheimer',1,88,87);
-INSERT INTO movies (id, name, director_id, formal_rating, popular_rating) VALUES (2,'Sound of Freedom',2,43,79);
-INSERT INTO movies (id, name, director_id, formal_rating, popular_rating) VALUES (3,'Babylon',3,60,72);
-INSERT INTO movies (id, name, director_id, formal_rating, popular_rating) VALUES (4,'Dunkerque',1,94,78);
-INSERT INTO movies (id, name, director_id, formal_rating, popular_rating) VALUES (5,'Los asesinos de la luna',4,0,0);
-INSERT INTO movies (id, name, director_id, formal_rating, popular_rating) VALUES (6,'Napoleon',5,0,0);
-INSERT INTO movies (id, name, director_id, formal_rating, popular_rating) VALUES (7,'Braveheart',6,68,83);
-INSERT INTO movies (id, name, director_id, formal_rating, popular_rating) VALUES (8,'Schindler list',7,95,90);
-INSERT INTO movies (id, name, director_id, formal_rating, popular_rating) VALUES (9,'Creadores de sombras',8,50,65);
-INSERT INTO movies (id, name, director_id, formal_rating, popular_rating) VALUES (10,'Amsterdam',9,48,61);
+INSERT INTO movies (id, name, director_id, formal_rating) VALUES (1,'Oppenheimer',1,88);--popular_rating,87);
+INSERT INTO movies (id, name, director_id, formal_rating) VALUES (2,'Sound of Freedom',2,43);--popular_rating,79);
+INSERT INTO movies (id, name, director_id, formal_rating) VALUES (3,'Babylon',3,60);--popular_rating,72);
+INSERT INTO movies (id, name, director_id, formal_rating) VALUES (4,'Dunkerque',1,94);--popular_rating,78);
+INSERT INTO movies (id, name, director_id, formal_rating) VALUES (5,'Los asesinos de la luna',4,0);--popular_rating,0);
+INSERT INTO movies (id, name, director_id, formal_rating) VALUES (6,'Napoleon',5,0);--popular_rating,0);
+INSERT INTO movies (id, name, director_id, formal_rating) VALUES (7,'Braveheart',6,68);--popular_rating,83);
+INSERT INTO movies (id, name, director_id, formal_rating) VALUES (8,'Schindler list',7,95);--popular_rating,90);
+INSERT INTO movies (id, name, director_id, formal_rating) VALUES (9,'Creadores de sombras',8,50);--popular_rating,65);
+INSERT INTO movies (id, name, director_id, formal_rating) VALUES (10,'Amsterdam',9,48);--popular_rating;,61);
 --INSERT INTO movies (id, name, director_id, formal_rating, popular_rating) VALUES (11,'',,,);
 --INSERT INTO movies (id, name, director_id, formal_rating, popular_rating) VALUES (12,'',,,);
 --INSERT INTO movies (id, name, director_id, formal_rating, popular_rating) VALUES (13,'',,,);

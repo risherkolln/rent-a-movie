@@ -34,7 +34,12 @@ public class MovieEntity {
             name = "movie_writers",
             joinColumns = @JoinColumn(name = "movie_id"),
             inverseJoinColumns = @JoinColumn(name = "writer_id"))
-    private List<WritersEntity> writers;
+    private List<WriterEntity> writers;
+    @ManyToMany
+    @JoinTable(
+            name = "movie_ratings",
+            joinColumns = @JoinColumn(name = "movie_id"),
+            inverseJoinColumns = @JoinColumn(name = "rating_id"))
+    private List<RatingEntity> ratings;
     private int formalRating;
-    private int popularRating;
 }

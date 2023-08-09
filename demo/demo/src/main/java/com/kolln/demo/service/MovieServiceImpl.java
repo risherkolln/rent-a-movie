@@ -1,5 +1,6 @@
 package com.kolln.demo.service;
 
+import com.kolln.demo.model.GenreEntity;
 import com.kolln.demo.model.MovieEntity;
 import com.kolln.demo.repository.GenreRepository;
 import com.kolln.demo.repository.MovieRepository;
@@ -29,17 +30,22 @@ public class MovieServiceImpl implements MovieService {
     }
 
     @Override
-    public MovieEntity getMoviesByStar(Long id) {
+    public List<String> getMoviesByStar(Long id) {
         return null;
     }
 
     @Override
-    public MovieEntity getMoviesByDirector(Long id) {
-        return null;
+    public List<String> getMoviesByDirector(Long id) {
+        return movieRepository.getByDirector_Id(id).stream().map(m -> m.getName()).collect(Collectors.toList());
     }
 
     @Override
     public List<String> getAllGenres() {
         return genreRepository.findAll().stream().map(g -> g.getName()).collect(Collectors.toList());
+    }
+
+    @Override
+    public List<GenreEntity> getAllGenreEntities() {
+        return genreRepository.findAll();
     }
 }

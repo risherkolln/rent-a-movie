@@ -10,8 +10,8 @@ import java.util.List;
 public interface MovieRepository extends JpaRepository<MovieEntity, Long> {
     int countById(Long id);
     List<MovieEntity> getByDirector_Id(Long id);
-    List<MovieEntity> getByStar_Id(Long id);
+    List<MovieEntity> getByStars_Id(Long id);
     List<MovieEntity> getByGenres_Id(Long id);
-    List<MovieEntity> findTop10ByOrderByPopularRatingDesc();
+ //   List<MovieEntity> findTop10ByOrderByPopularRatingDesc();
     List<MovieEntity> findTop10ByOrderByFormalRatingDesc();
 }
