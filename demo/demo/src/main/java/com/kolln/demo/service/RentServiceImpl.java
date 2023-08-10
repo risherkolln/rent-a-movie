@@ -23,22 +23,33 @@ public class RentServiceImpl implements RentService{
     }
 
     @Override
-    public Rent findByName(String name) {
-        return entityToRentDto(repository.findByCustomer_Name(name));
+    public List<Rent> findByName(String name) {
+        return repository.findByCustomer_NameContainingIgnoreCase(name).stream()
+                .map(this::entityToRentDto)
+                .collect(Collectors.toList());
     }
 
     @Override
-    public Rent findByDni(Long dni) {
-        return entityToRentDto(repository.findByCustomer_Dni(dni));
+    public List<Rent> findByDni(Long dni) {
+        return repository.findByCustomer_DniContaining(dni).stream()
+                .map(this::entityToRentDto)
+                .collect(Collectors.toList());
     }
 
     @Override
-    public Rent findBySerialNumber(String serialNumber) {
-        return entityToRentDto(repository.findByMovieCopy_SerialNumber(serialNumber));
+    public List<Rent> findBySerialNumber(String serialNumber) {
+        return repository.findByMovieCopy_SerialNumberContaining(serialNumber).stream()
+                .map(this::entityToRentDto)
+                .collect(Collectors.toList());
     }
 
     private Rent entityToRentDto(RentEntity entity) {
         Rent rentDto = new Rent();
+
+        rentDto.setId(entity.getId());
+        rentDto.setRentDate(entity.getRentDate());
+        rentDto.setReturnDate(entity.getReturnDate());
+        rentDto.setReturned(entity.getReturned());
         return rentDto;
     }
 }

@@ -15,7 +15,7 @@ public class RentEntity {
     @Id
     private Long id;
     @ManyToOne
-    @JoinColumn(name = "costumer_id")
+    @JoinColumn(name = "customer_id")
     private CustomerEntity customer;
     @ManyToOne
     @JoinColumn(name = "movie_copy_id")

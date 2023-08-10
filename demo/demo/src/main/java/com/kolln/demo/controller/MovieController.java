@@ -2,12 +2,10 @@ package com.kolln.demo.controller;
 
 
 import com.kolln.demo.model.GenreEntity;
+import com.kolln.demo.model.dto.Movie;
 import com.kolln.demo.service.MovieService;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -38,5 +36,10 @@ public class MovieController {
     public List<String> getMoviesByDirector(@PathVariable Long id) {
         List<String> movies = movieService.getMoviesByDirector(id);
         return movies;
+    }
+
+    @GetMapping(params = {"name", "format"})
+    public List<Movie> findAvailableByNameAndFormat(@RequestParam String name, @RequestParam Long format) {
+        return movieService.findAvailableByNameAndFormat(name, format);
     }
 }

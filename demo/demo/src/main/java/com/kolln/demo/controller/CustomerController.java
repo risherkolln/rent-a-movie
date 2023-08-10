@@ -16,12 +16,12 @@ public class CustomerController {
 
     }
 
-    @PutMapping
+    @PostMapping
     public void createCustomer() {
 
     }
 
-    @PostMapping
+    @PutMapping
     public void updateCustomer() {
 
     }

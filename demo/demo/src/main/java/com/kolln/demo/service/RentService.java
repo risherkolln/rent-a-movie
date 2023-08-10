@@ -7,7 +7,7 @@ import java.util.List;
 public interface RentService {
 
     List<Rent> findAll();
-    Rent findByName(String name);
-    Rent findByDni(Long dni);
-    Rent findBySerialNumber(String serialNumber);
+    List<Rent> findByName(String name);
+    List<Rent> findByDni(Long dni);
+    List<Rent> findBySerialNumber(String serialNumber);
 }

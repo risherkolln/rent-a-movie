@@ -5,36 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e053445d-59fb-4a3d-8d37-a20c76a59323" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/kolln/demo/controller/CustomerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/kolln/demo/controller/RentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/kolln/demo/model/RatingEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/kolln/demo/model/dto/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/kolln/demo/model/dto/Director.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/kolln/demo/model/dto/Format.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/kolln/demo/model/dto/Genre.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/kolln/demo/model/dto/Movie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/kolln/demo/model/dto/MovieCopy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/kolln/demo/model/dto/Rating.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/kolln/demo/model/dto/Rent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/kolln/demo/model/dto/Star.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/kolln/demo/model/dto/Writer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/kolln/demo/repository/RentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/kolln/demo/service/RentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/kolln/demo/service/RentServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/demo/src/main/resources/templates/genres-list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_attoparser_attoparser_2_0_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_3_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_3_1_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring6_3_1_1_RELEASE.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo/src/main/java/com/kolln/demo/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/kolln/demo/controller/CustomerController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/demo/src/main/java/com/kolln/demo/controller/MovieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/kolln/demo/controller/MovieController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/demo/src/main/java/com/kolln/demo/model/MovieEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/kolln/demo/model/MovieEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/demo/src/main/java/com/kolln/demo/model/WritersEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/kolln/demo/model/WriterEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo/src/main/java/com/kolln/demo/controller/RentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/kolln/demo/controller/RentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo/src/main/java/com/kolln/demo/model/RentEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/kolln/demo/model/RentEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/demo/src/main/java/com/kolln/demo/repository/MovieRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/kolln/demo/repository/MovieRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo/src/main/java/com/kolln/demo/repository/RentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/kolln/demo/repository/RentRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/demo/src/main/java/com/kolln/demo/service/MovieService.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/kolln/demo/service/MovieService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/demo/src/main/java/com/kolln/demo/service/MovieServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/kolln/demo/service/MovieServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/demo/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo/src/main/java/com/kolln/demo/service/RentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/kolln/demo/service/RentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo/src/main/java/com/kolln/demo/service/RentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/kolln/demo/service/RentServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/demo/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo/src/main/resources/data.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

@@ -11,7 +11,7 @@ INSERT INTO customers (id, name, address, dni) VALUES (10,'Paola Valeria Vara', 
 
 
 INSERT INTO formats (id, name) VALUES (1,'dvd');
-INSERT INTO formats (id, name) VALUES (2,'vhs');;
+INSERT INTO formats (id, name) VALUES (2,'vhs');
 INSERT INTO formats (id, name) VALUES (3,'blue-ray');
 INSERT INTO formats (id, name) VALUES (4,'digital');
 
@@ -79,6 +79,31 @@ INSERT INTO movies (id, name, director_id, formal_rating) VALUES (10,'Amsterdam'
 --INSERT INTO movies (id, name, director_id, formal_rating, popular_rating) VALUES (49,'',,,);
 --INSERT INTO movies (id, name, director_id, formal_rating, popular_rating) VALUES (50,'',,,);
 
+INSERT INTO movie_copies (id, serial_number, movie_id, format_id) VALUES (1,'aab12c8410fe',1,1);
+INSERT INTO movie_copies (id, serial_number, movie_id, format_id) VALUES (2,'2ab42c8410ff',1,2);
+INSERT INTO movie_copies (id, serial_number, movie_id, format_id) VALUES (3,'11b12c8410ae',1,3);
+INSERT INTO movie_copies (id, serial_number, movie_id, format_id) VALUES (4,'aab12c8410fe',2,3);
+INSERT INTO movie_copies (id, serial_number, movie_id, format_id) VALUES (5,'a152c84f10fe',2,4);
+INSERT INTO movie_copies (id, serial_number, movie_id, format_id) VALUES (6,'d3618c840f3e',3,2);
+INSERT INTO movie_copies (id, serial_number, movie_id, format_id) VALUES (7,'7254da12c0fa',4,2);
+INSERT INTO movie_copies (id, serial_number, movie_id, format_id) VALUES (8,'ab1c410e2744',5,3);
+INSERT INTO movie_copies (id, serial_number, movie_id, format_id) VALUES (9,'2a62c8410f00',5,4);
+INSERT INTO movie_copies (id, serial_number, movie_id, format_id) VALUES (10,'00a5b132c235',6,2);
+INSERT INTO movie_copies (id, serial_number, movie_id, format_id) VALUES (11,'a3a6b129c082',6,3);
+INSERT INTO movie_copies (id, serial_number, movie_id, format_id) VALUES (12,'2a5a4b45c841',6,4);
+INSERT INTO movie_copies (id, serial_number, movie_id, format_id) VALUES (13,'a23ab1c84103',7,1);
+INSERT INTO movie_copies (id, serial_number, movie_id, format_id) VALUES (14,'54a55a73c841',7,2);
+INSERT INTO movie_copies (id, serial_number, movie_id, format_id) VALUES (15,'a45ab512c841',8,1);
+INSERT INTO movie_copies (id, serial_number, movie_id, format_id) VALUES (16,'aab12c44310f',8,2);
+INSERT INTO movie_copies (id, serial_number, movie_id, format_id) VALUES (17,'43345ab12c84',9,1);
+INSERT INTO movie_copies (id, serial_number, movie_id, format_id) VALUES (18,'a34ab2312423',9,2);
+INSERT INTO movie_copies (id, serial_number, movie_id, format_id) VALUES (19,'a678a3b345c',10,1);
+INSERT INTO movie_copies (id, serial_number, movie_id, format_id) VALUES (20,'7a45ab43563',10,2);
+
+INSERT INTO rentals (id, movie_copy_id, customer_id, rent_date, return_date, returned) VALUES (1,1,2,'2023-08-22 11:35:15.0','2023-08-26 17:25:15.0',1);
+INSERT INTO rentals (id, movie_copy_id, customer_id, rent_date, return_date, returned) VALUES (2,3,10,'2023-08-22 11:35:15.0','2023-08-26 17:25:15.0',1);
+INSERT INTO rentals (id, movie_copy_id, customer_id, rent_date, return_date, returned) VALUES (3,6,1,'2023-08-22 11:35:15.0','2023-08-26 17:25:15.0',1);
+INSERT INTO rentals (id, movie_copy_id, customer_id, rent_date, return_date, returned) VALUES (4,10,10,'2023-08-22 11:35:15.0','2023-08-26 17:25:15.0',1);
 
 INSERT INTO genres (id, name) VALUES (1, 'Terror');
 INSERT INTO genres (id, name) VALUES (2, 'Accion');

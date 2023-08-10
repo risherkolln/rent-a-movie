@@ -1,12 +1,8 @@
 package com.kolln.demo.controller;
 
-import com.kolln.demo.model.dto.Customer;
 import com.kolln.demo.model.dto.Rent;
 import com.kolln.demo.service.RentService;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -24,18 +20,18 @@ public class RentController {
         return service.findAll();
     }
 
-    @GetMapping("/{name}")
-    public Rent findByName(@PathVariable String name) {
+    @GetMapping(value = "/customers", params = "name")
+    public List<Rent> findByName(@RequestParam String name) {
         return service.findByName(name);
     }
 
-    @GetMapping("/{dni}")
-    public Rent findByDni(@PathVariable Long dni) {
+    @GetMapping(value = "/customers", params = "dni")
+    public List<Rent> findByDni(@RequestParam Long dni) {
         return service.findByDni(dni);
     }
 
-    @GetMapping("/{serialNumber}")
-    public Rent findBySerialNumber(@PathVariable String serialNumber) {
+    @GetMapping(value = "/customers", params = "serialNumber")
+    public List<Rent> findBySerialNumber(@RequestParam String serialNumber) {
         return service.findBySerialNumber(serialNumber);
     }
 }

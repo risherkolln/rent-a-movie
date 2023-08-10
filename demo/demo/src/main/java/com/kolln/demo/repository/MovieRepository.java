@@ -1,6 +1,7 @@
 package com.kolln.demo.repository;
 
 import com.kolln.demo.model.MovieEntity;
+import com.kolln.demo.model.dto.Movie;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
@@ -14,4 +15,6 @@ public interface MovieRepository extends JpaRepository<MovieEntity, Long> {
     List<MovieEntity> getByGenres_Id(Long id);
  //   List<MovieEntity> findTop10ByOrderByPopularRatingDesc();
     List<MovieEntity> findTop10ByOrderByFormalRatingDesc();
+
+    List<Movie> findAvailableByNameAndFormat_Id(String name, Long format);
 }
