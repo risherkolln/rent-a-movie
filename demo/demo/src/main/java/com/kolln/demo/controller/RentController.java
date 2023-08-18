@@ -20,6 +20,11 @@ public class RentController {
         return service.findAll();
     }
 
+    @GetMapping(value = "/rented")
+    public List<Rent> findAllRented() {
+        return service.findAllRented();
+    }
+
     @GetMapping(value = "/customers", params = "name")
     public List<Rent> findByName(@RequestParam String name) {
         return service.findByName(name);
@@ -33,5 +38,10 @@ public class RentController {
     @GetMapping(value = "/customers", params = "serialNumber")
     public List<Rent> findBySerialNumber(@RequestParam String serialNumber) {
         return service.findBySerialNumber(serialNumber);
+    }
+
+    @GetMapping(value = "/rented", params = "name")
+    public List<Rent> findRentedCustomerName(@RequestParam String name) {
+        return service.findRentedCustomerName(name);
     }
 }

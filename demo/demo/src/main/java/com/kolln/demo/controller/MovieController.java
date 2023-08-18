@@ -1,5 +1,8 @@
 package com.kolln.demo.controller;
 
+import com.kolln.demo.model.dto.Movie;
+import com.kolln.demo.model.dto.MovieCopy;
+import com.kolln.demo.model.helper.MovieJson;
 import com.kolln.demo.service.MovieService;
 import org.springframework.web.bind.annotation.*;
 
@@ -15,23 +18,35 @@ public class MovieController {
         this.movieService = movieService;
     }
 
+    @GetMapping
+    public List<Movie> getAll() {
+        return movieService.getAll();
+    }
+
     @GetMapping("/genres")
     public String getAllGenres() {
-        return movieService.findAllGenres().stream().collect(Collectors.joining(","));
+        return movieService.findAllGenres().stream()
+                .map(g -> g.getName())
+                .collect(Collectors.joining(","));
     }
 
     @GetMapping("/genres/{id}")
-    public List<String> getMoviesByGenre(@PathVariable Long id) {
+    public List<Movie> getMoviesByGenre(@PathVariable Long id) {
         return movieService.findMoviesByGenre_Id(id);
     }
 
     @GetMapping("/directors/{id}")
-    public List<String> getMoviesByDirector(@PathVariable Long id) {
+    public List<Movie> getMoviesByDirector(@PathVariable Long id) {
         return movieService.findMoviesByDirector_Id(id);
     }
 
-    @GetMapping(params = {"name", "format"})
-    public List<String> findAvailableByNameAndFormat(@RequestParam String name, @RequestParam Long format) {
-        return movieService.findAvailableByNameAndFormat(name, format);
+    @GetMapping(value = "/available", params = {"movieId", "formatId"})
+    public List<MovieCopy> findAvailableCopiesByFormat(@RequestParam Long movieId, @RequestParam Long formatId) {
+        return movieService.findAvailableMovieCopyByMovieAndFormat(movieId, formatId);
+    }
+
+    @PostMapping()
+    public void createMovie(@RequestBody MovieJson movieJson) {
+        movieService.createMovie(movieJson);
     }
 }

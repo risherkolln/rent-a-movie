@@ -23,6 +23,13 @@ public class RentServiceImpl implements RentService{
     }
 
     @Override
+    public List<Rent> findAllRented() {
+        return repository.findByReturnedFalse().stream()
+                .map(this::entityToRentDto)
+                .collect(Collectors.toList());
+    }
+
+    @Override
     public List<Rent> findByName(String name) {
         return repository.findByCustomer_NameContainingIgnoreCase(name).stream()
                 .map(this::entityToRentDto)
@@ -39,6 +46,13 @@ public class RentServiceImpl implements RentService{
     @Override
     public List<Rent> findBySerialNumber(String serialNumber) {
         return repository.findByMovieCopy_SerialNumberContaining(serialNumber).stream()
+                .map(this::entityToRentDto)
+                .collect(Collectors.toList());
+    }
+
+    @Override
+    public List<Rent> findRentedCustomerName(String name) {
+        return repository.findByReturnedFalseAndCustomerNameContaining(name).stream()
                 .map(this::entityToRentDto)
                 .collect(Collectors.toList());
     }

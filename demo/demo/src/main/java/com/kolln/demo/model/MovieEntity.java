@@ -11,7 +11,8 @@ import java.util.List;
 @Setter
 @Table(name = "movies")
 public class MovieEntity {
-    @Id
+    @Id()
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
     @ManyToMany
