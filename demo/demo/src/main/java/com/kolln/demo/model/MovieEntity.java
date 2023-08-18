@@ -1,19 +1,46 @@
 package com.kolln.demo.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
+
+import java.util.List;
 
 @Entity
+@Getter
+@Setter
 @Table(name = "movies")
 public class MovieEntity {
-    @Id
+    @Id()
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
-    private String genre;
-    private Director director;
-    private List<Actor> stars;
-    private List<Writer> writers;
-    private Double formalRating;
-    private Double popularRating;
+    @ManyToMany
+    @JoinTable(
+            name = "movie_genres",
+            joinColumns = @JoinColumn(name = "movie_id"),
+            inverseJoinColumns = @JoinColumn(name = "genre_id"))
+    private List<GenreEntity> genres;
+    @ManyToOne
+    @JoinColumn(name = "director_id")
+    private DirectorEntity director;
+    @ManyToMany
+    @JoinTable(
+            name = "movie_stars",
+            joinColumns = @JoinColumn(name = "movie_id"),
+            inverseJoinColumns = @JoinColumn(name = "star_id"))
+    private List<StarEntity> stars;
+    @ManyToMany
+    @JoinTable(
+            name = "movie_writers",
+            joinColumns = @JoinColumn(name = "movie_id"),
+            inverseJoinColumns = @JoinColumn(name = "writer_id"))
+    private List<WriterEntity> writers;
+    @ManyToMany
+    @JoinTable(
+            name = "movie_ratings",
+            joinColumns = @JoinColumn(name = "movie_id"),
+            inverseJoinColumns = @JoinColumn(name = "rating_id"))
+    private List<RatingEntity> ratings;
+    private int formalRating;
 }

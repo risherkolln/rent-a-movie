@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Genres List</title>
+</head>
+<body>
+    <h1>Genres List</h1>
+    <ul>
+        <li th:each="genre : ${genres}" th:text="${genre.name}"></li>
+    </ul>
+    <h1 th:text="${mensaje}"></h1>
+</body>
+</html>
