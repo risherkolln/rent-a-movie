@@ -16,5 +16,5 @@ public interface MovieRepository extends JpaRepository<MovieEntity, Long> {
  //   List<MovieEntity> findTop10ByOrderByPopularRatingDesc();
     List<MovieEntity> findTop10ByOrderByFormalRatingDesc();
 
-    List<Movie> findAvailableByNameAndFormat_Id(String name, Long format);
+//    List<Movie> findAvailableByNameAndFormat_Id(String name, Long format);
 }

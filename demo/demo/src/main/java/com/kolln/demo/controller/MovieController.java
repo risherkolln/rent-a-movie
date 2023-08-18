@@ -1,13 +1,10 @@
 package com.kolln.demo.controller;
 
-
-import com.kolln.demo.model.GenreEntity;
-import com.kolln.demo.model.dto.Movie;
 import com.kolln.demo.service.MovieService;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/rent-a-movie/movies")
@@ -19,27 +16,22 @@ public class MovieController {
     }
 
     @GetMapping("/genres")
-    public String getAllGenres(Model model) {
-        List<GenreEntity> genres = movieService.getAllGenreEntities();
-     //   model.addAttribute("genres", genres);
-        model.addAttribute("mensaje", "probando mensaje!");
-        return "genres-list";
+    public String getAllGenres() {
+        return movieService.findAllGenres().stream().collect(Collectors.joining(","));
     }
 
     @GetMapping("/genres/{id}")
     public List<String> getMoviesByGenre(@PathVariable Long id) {
-        List<String> movies = movieService.getMoviesByGenre(id);
-        return movies;
+        return movieService.findMoviesByGenre_Id(id);
     }
 
     @GetMapping("/directors/{id}")
     public List<String> getMoviesByDirector(@PathVariable Long id) {
-        List<String> movies = movieService.getMoviesByDirector(id);
-        return movies;
+        return movieService.findMoviesByDirector_Id(id);
     }
 
     @GetMapping(params = {"name", "format"})
-    public List<Movie> findAvailableByNameAndFormat(@RequestParam String name, @RequestParam Long format) {
+    public List<String> findAvailableByNameAndFormat(@RequestParam String name, @RequestParam Long format) {
         return movieService.findAvailableByNameAndFormat(name, format);
     }
 }

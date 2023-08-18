@@ -1,17 +1,12 @@
 package com.kolln.demo.service;
 
-import com.kolln.demo.model.GenreEntity;
-import com.kolln.demo.model.MovieEntity;
-import com.kolln.demo.model.dto.Genre;
-import com.kolln.demo.model.dto.Movie;
-
 import java.util.List;
 
 public interface MovieService {
-    List<Movie> findMoviesByGenre_Id(Long id);
-    List<Movie> findMoviesByStar_Id(Long id);
-    List<Movie> findMoviesByDirector_Id(Long id);
-    List<Genre> findAllGenres();
+    List<String> findMoviesByGenre_Id(Long id);
+    List<String> findMoviesByStar_Id(Long id);
+    List<String> findMoviesByDirector_Id(Long id);
+    List<String> findAllGenres();
 
-    List<Movie> findAvailableByNameAndFormat(String name, Long format);
+    List<String> findAvailableByNameAndFormat(String name, Long format);
 }
