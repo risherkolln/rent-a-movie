@@ -16,7 +16,6 @@ import com.kolln.demo.repository.StarRepository;
 import org.springframework.data.rest.webmvc.ResourceNotFoundException;
 import org.springframework.stereotype.Service;
 
-import javax.swing.text.html.parser.Entity;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -26,7 +25,6 @@ public class MovieServiceImpl implements MovieService {
     private final GenreRepository genreRepository;
     private final DirectorRepository directorRepository;
     private final StarRepository starRepository;
-
 
     public MovieServiceImpl(MovieRepository movieRepository,
                             GenreRepository genreRepository,
@@ -71,7 +69,6 @@ public class MovieServiceImpl implements MovieService {
                 .collect(Collectors.toList());
     }
 
-
     @Override
     public List<MovieCopy> findAvailableMovieCopyByMovieAndFormat(Long movieId, Long formatId) {
         return null;
@@ -80,6 +77,7 @@ public class MovieServiceImpl implements MovieService {
     @Override
     public void createMovie(MovieJson json) {
         MovieEntity entity = new MovieEntity();
+
         entity.setName(json.getName());
         entity.setDirector(directorRepository.findById(json.getDirectorId())
                 .orElseThrow(ResourceNotFoundException::new));
@@ -89,7 +87,6 @@ public class MovieServiceImpl implements MovieService {
 
         movieRepository.save(entity);
     }
-
 
     private MovieCopy entityToMovieCopyDto(MovieCopyEntity entity) {
         MovieCopy movieCopyDto = new MovieCopy();
