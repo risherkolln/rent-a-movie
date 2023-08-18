@@ -1,4 +1,4 @@
-INSERT INTO customers (name, address, dni) VALUES ('Roberto Fernandez', 'Chaco 185', 12542343);
+/*INSERT INTO customers (name, address, dni) VALUES ('Roberto Fernandez', 'Chaco 185', 12542343);
 INSERT INTO customers (name, address, dni) VALUES ('Macarena Ruiz', 'Tucuman 1185', 33354105);
 INSERT INTO customers (name, address, dni) VALUES ('Marcos Alberto Lopez', 'Entre Rios 59', 47362600);
 INSERT INTO customers (name, address, dni) VALUES ('Maria Eugenia Wirz', 'San Martin 325', 21730805);
@@ -155,6 +155,6 @@ INSERT INTO movie_genres (movie_id, genre_id) VALUES (9,11);
 INSERT INTO movie_genres (movie_id, genre_id) VALUES (9,14);
 INSERT INTO movie_genres (movie_id, genre_id) VALUES (10,3);
 INSERT INTO movie_genres (movie_id, genre_id) VALUES (10,11);
-INSERT INTO movie_genres (movie_id, genre_id) VALUES (10,14);
+INSERT INTO movie_genres (movie_id, genre_id) VALUES (10,14);*/
 
 
