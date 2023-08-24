@@ -5,18 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e053445d-59fb-4a3d-8d37-a20c76a59323" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_h2database_h2_2_1_214.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/1/01fb86437c9f67ce5f0c43f4c2c41c72898590c4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/b/0b22b595a704d732a9f335731f1e4c3a347eadb3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/5/156bf81fcdaa058e598d728d5f486a85d2e0ade9" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/1/21ac8033d0c2e95d1ea0fe895660b4a880e9de09" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/2/42397656bb587e716e4b08dbf4dadffdd2af2973" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/446b4df9940d0495d2ad05a2265f701bb0724ac9" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/9/6976d4789c5f13036da39a824320affcc6a52a6a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/f/7fac964839f8bb4266b543b972fd361c857890fa" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/d/8d0a67d77d18476b392caa983a69b5ef6935b1f5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/6/b6cda71684b804bf3a6fe2cfcceeb468bc982e53" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/3/c384dc417de81bbe8ae6d9241553265c8b967af0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/a/ca8be58d04f2d319f6517619a1bde4c2cac5174d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/a/da168f596064c51c3db4a4d0d4e43d25e03f3b3f" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/c/dc0f56a367a5de1b772fecf2b3927aaf5e21d294" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/f/df7c6fa3e23cff0a62302c9aab01af7a45026270" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/2/e23a1366bb15974ae9dcc6af1592fd573bd0b23b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/e/eee3e1e448eee19c4db49e941004fc81bf04fec9" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/a/fafa82772662512d5cd30561d4fda233aca3cd9c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/demo/src/test/java/com/kolln/demo/controller/CustomerControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/demo/src/test/java/com/kolln/demo/controller/MovieControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/demo/src/test/java/com/kolln/demo/controller/RentControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/demo/src/test/java/com/kolln/demo/service/CustomerServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/demo/src/test/java/com/kolln/demo/service/MovieServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/demo/src/test/java/com/kolln/demo/service/RentServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_9_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_5_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_5_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/demo/src/main/java/com/kolln/demo/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/kolln/demo/controller/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/demo/src/main/java/com/kolln/demo/controller/MovieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/kolln/demo/controller/MovieController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/demo/src/main/java/com/kolln/demo/controller/RentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/kolln/demo/controller/RentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/demo/src/main/java/com/kolln/demo/model/RentEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/kolln/demo/model/RentEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/demo/src/main/java/com/kolln/demo/repository/MovieRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/kolln/demo/repository/MovieRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/demo/src/main/java/com/kolln/demo/repository/RentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/kolln/demo/repository/RentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/demo/src/main/java/com/kolln/demo/service/MovieService.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/kolln/demo/service/MovieService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/demo/src/main/java/com/kolln/demo/service/MovieServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/kolln/demo/service/MovieServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/demo/src/main/java/com/kolln/demo/service/RentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/kolln/demo/service/RentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/demo/src/main/java/com/kolln/demo/service/RentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/kolln/demo/service/RentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/demo/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo/src/main/resources/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +48,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -68,15 +89,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Proyectos/IntelliJ/rent-a-movie&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_opened_file_path": "D:/Proyectos/IntelliJ/rent-a-movie",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
   }
-}</component>
-  <component name="RunManager">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.kolln.demo.service" />
+      <recent name="com.kolln.demo.controller" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.MovieServiceImplTest.findMoviesByGenre_Id">
     <configuration name="RentamovieApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.kolln.demo.RentamovieApplication" />
       <module name="demo" />
@@ -90,8 +123,74 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MovieServiceImplTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kolln.demo.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.kolln.demo.service" />
+      <option name="MAIN_CLASS_NAME" value="com.kolln.demo.service.MovieServiceImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MovieServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kolln.demo.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.kolln.demo.service" />
+      <option name="MAIN_CLASS_NAME" value="com.kolln.demo.service.MovieServiceImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MovieServiceImplTest.findMoviesByGenre_Id" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kolln.demo.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.kolln.demo.service" />
+      <option name="MAIN_CLASS_NAME" value="com.kolln.demo.service.MovieServiceImplTest" />
+      <option name="METHOD_NAME" value="findMoviesByGenre_Id" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MovieServiceImplTest.getAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kolln.demo.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.kolln.demo.service" />
+      <option name="MAIN_CLASS_NAME" value="com.kolln.demo.service.MovieServiceImplTest" />
+      <option name="METHOD_NAME" value="getAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MovieServiceImplTest.findMoviesByGenre_Id" />
+        <item itemvalue="JUnit.MovieServiceImplTest.getAll" />
+        <item itemvalue="JUnit.MovieServiceImplTest" />
+        <item itemvalue="JUnit.MovieServiceImplTest (1)" />
         <item itemvalue="Application.RentamovieApplication" />
       </list>
     </recent_temporary>
@@ -117,5 +216,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
