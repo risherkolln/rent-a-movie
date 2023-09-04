@@ -1,0 +1,9 @@
+
+h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿ¨®öúÿÿÿÿ
+h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“›º—þÿÿÿÿ
+Q	java:S125"<This block of commented-out lines of code should be removed.(Ñ†»À
+]	java:S125"<This block of commented-out lines of code should be removed.(‡‚Œâýÿÿÿÿ8©ììôŸ1
+X
+java:S1128";Remove this unused import 'com.kolln.demo.model.dto.Movie'.(²ÍÌÇ8Å‡§Å 1
+l
+java:S1128"JRemove this unused import 'org.springframework.data.jpa.repository.Query'.(Äºöïþÿÿÿÿ8õÃõÅ 1
